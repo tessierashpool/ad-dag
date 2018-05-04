@@ -1,10 +1,23 @@
 {
     "name": "ad-dag-travis-ci",
     "version": "0.0.1",
+    "private": true,
     "scripts": {
-        "posttest": "node deploy/basicftp.js"
+        "posttest": "node deploy/basicftp.js",
+        "start": "webpack"
     },
     "devDependencies": {
-        "basic-ftp": "^2.11.0"
+        "basic-ftp": "^2.11.0",
+        "clean-webpack-plugin": "^0.1.19",
+        "css-loader": "^0.28.11",
+        "extract-loader": "^2.0.1",
+        "extract-text-webpack-plugin": "^4.0.0-beta.0",
+        "file-loader": "^1.1.11",
+        "html-webpack-plugin": "^3.2.0",
+        "node-sass": "^4.9.0",
+        "sass-loader": "^7.0.1",
+        "style-loader": "^0.21.0",
+        "webpack": "^4.6.0",
+        "webpack-cli": "^2.1.2"
     }
 }
