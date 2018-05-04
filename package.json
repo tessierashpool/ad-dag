@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "posttest": "node deploy/basicftp.js",
-        "start": "webpack"
+        "pretest": "webpack"
     },
     "devDependencies": {
         "basic-ftp": "^2.11.0",
